@@ -54,6 +54,31 @@
     a {
         color: #ff4d5a;
     }
+/* Part 2 - Card Grid */
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #1c1c1c;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid #333;
+}
+
+.card h3 {
+    color: #ff4d4d;
+    margin-top: 0;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
 </style>
 <h1 id="about">Cristian Benavides</h1>
 
@@ -85,3 +110,40 @@
 
   <a href="https://www.youtube.com/" target="_blank">YouTube</a>
 </p>
+<h2>About Me</h2>
+
+<div class="card-grid">
+
+    <div class="card">
+        <h3>Education</h3>
+        <p>I am currently a college student working toward improving my knowledge and skills.</p>
+    </div>
+
+    <div class="card">
+        <h3>Skills</h3>
+        <p>I am learning programming, problem-solving, and working with different technologies.</p>
+    </div>
+
+    <div class="card">
+        <h3>Interests</h3>
+        <p>I enjoy working out, gaming, listening to music, and spending time with friends.</p>
+    </div>
+
+</div>
+
+<h2>More About Me</h2>
+
+<details>
+    <summary>My Education</summary>
+    <p>I am currently attending college and working toward building my knowledge and skills for my future.</p>
+</details>
+
+<details>
+    <summary>My Hobbies</summary>
+    <p>I enjoy going to the gym, gaming, listening to music, and spending time with friends.</p>
+</details>
+
+<details>
+    <summary>My Goals</summary>
+    <p>My goal is to keep learning, improving myself, and challenging myself to become a better person.</p>
+</details>
